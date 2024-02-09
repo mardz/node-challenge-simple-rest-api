@@ -1,5 +1,5 @@
 # Node challenge: Pet Adoption RESTful API
-Este repositorio pretende ser una plantilla rápida para ayudar a practicar conceptos sobre API relajantes con NodeJS. 
+Este repositorio pretende ser una plantilla rápida para ayudar a practicar conceptos sobre APIs con NodeJS.
 
 ## Requerimientos funcionales
 Un Refugio de Animales local que quiere crear un sitio web para facilitar la adopción de mascotas. El proyecto en general busca crear una plataforma que conecte a los posibles adoptantes con las mascotas disponibles para adopción.
@@ -71,7 +71,6 @@ Permita que los administradores revisen y aprueben/rechacen solicitudes de adopc
 ## Envío
 Envíe su proyecto como un repositorio de GitHub a tu tutor, incluyendo un archivo README.md claro que explique su proyecto, sus características y cómo ejecutarlo.
 
-
 ## Criterios a evaluar
 * Funcionalidad: ¿La aplicación cumple con los requisitos especificados?
 * Calidad del código: ¿el código está bien estructurado, es legible y cumple con las mejores prácticas?
@@ -79,14 +78,22 @@ Envíe su proyecto como un repositorio de GitHub a tu tutor, incluyendo un archi
 * Documentación: ¿Está el proyecto bien documentado y proporciona instrucciones claras para su configuración y uso?
  
 # Pre-requisitos de ambiente
-
 1. Instalar NVM
-2. Instalar Node JS (LTS al momento v20.11.0)
-3. Instalar Typescript globalmente  `npm install typescript -g`
+2. Instalar Node JS (LTS al momento v20.11.0) and set it as default
+    ```
+    nvm install 20.11.0
+    nvm alias default 20.11.0
+    ```
+3. Instalar yarn globalmente para manejo de dependencias `npm install yarn -g`
 4. Hacer un fork de este repositorio y descargarlo localmente
-5. entrar al directorio raiz del repositorio y correr el comando `npm install` para descargar las dependencias iniciales del proyecto
+5. Entrar al directorio raíz del repositorio y correr el comando `yarn install` para descargar las dependencias iniciales
+6. Correr el proyecto `yarn run dev`
+7. Correr unit tests `yarn run test`
 
 ## Recursos de utilidad
+* Repositorios Boilerplate donde se baso este ejercicio
+    * https://github.com/mwolfhoffman/node-jwt-sqlite-typescript-starter
+    * https://github.com/Chensokheng/rest-api/tree/master
 * [Introducción a NodeJS](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs): 
 * [Ethereal Email](https://ethereal.email/): Servicio SMTP falso para simular envio de email 
     * [Using nodemailer with ethereal example](https://dev.to/berviantoleo/email-testing-using-ethereal-inb)
@@ -94,5 +101,22 @@ Envíe su proyecto como un repositorio de GitHub a tu tutor, incluyendo un archi
 ## Fuente de informacion semilla usada en este repo
 * [Dog breeds](https://github.com/jfairbank/programming-elm.com/blob/master/dog-breeds.json)
 * [Cat breeds](https://github.com/jfairbank/programming-elm.com/blob/master/cat-breeds.json)
- 
 
+__________
+***TODO***
+* seed data DB local
+* linter, husky pre-commits hooks
+* full example of folder structure by component 
+/src
+    /config
+    /pet
+        pet.controller.ts
+        pet.route.ts
+        pet.service.ts
+        pet.models.ts
+        pet.spec.ts
+    /user
+        ...
+    /commons
+        ... any common code
+    server.ts
