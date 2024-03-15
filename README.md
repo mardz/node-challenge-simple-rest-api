@@ -113,7 +113,7 @@ __________
         pet.controller.ts
         pet.route.ts
         pet.service.ts
-        pet.models.ts
+        pet.model.ts
         pet.spec.ts
     /user
         ...

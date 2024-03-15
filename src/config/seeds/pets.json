@@ -1,0 +1,112 @@
+[
+  {
+    "name": "Bella",
+    "species": "Dog",
+    "gender": "Female",
+    "breed": "Labrador",
+    "dateOfBirth": "2015-04-23",
+    "dateOfAdoption": "2023-08-15",
+    "description": "Friendly and playful",
+    "profileImg": "img1.jpg",
+    "adoptionStatus": "Available"
+  },
+  {
+    "name": "Max",
+    "species": "Cat",
+    "gender": "Male",
+    "breed": "Beagle",
+    "dateOfBirth": "2018-09-12",
+    "dateOfAdoption": null,
+    "description": "Loves to cuddle",
+    "profileImg": "img2.jpg",
+    "adoptionStatus": "Available"
+  },
+  {
+    "name": "Charlie",
+    "species": "Dog",
+    "gender": "Female",
+    "breed": "Poodle",
+    "dateOfBirth": "2017-05-07",
+    "dateOfAdoption": "2023-03-20",
+    "description": "Very active and energetic",
+    "profileImg": "img3.jpg",
+    "adoptionStatus": "Available"
+  },
+  {
+    "name": "Luna",
+    "species": "Cat",
+    "gender": "Female",
+    "breed": "Bulldog",
+    "dateOfBirth": "2019-11-30",
+    "dateOfAdoption": null,
+    "description": "Shy but affectionate",
+    "profileImg": "img4.jpg",
+    "adoptionStatus": "Available"
+  },
+  {
+    "name": "Lucy",
+    "species": "Dog",
+    "gender": "Female",
+    "breed": "Golden Retriever",
+    "dateOfBirth": "2016-02-14",
+    "dateOfAdoption": "2023-07-09",
+    "description": "Great with kids",
+    "profileImg": "img5.jpg",
+    "adoptionStatus": "Available"
+  },
+  {
+    "name": "Cooper",
+    "species": "Cat",
+    "gender": "Male",
+    "breed": "Rottweiler",
+    "dateOfBirth": "2014-08-20",
+    "dateOfAdoption": null,
+    "description": "Loyal and protective",
+    "profileImg": "img1.jpg",
+    "adoptionStatus": "Available"
+  },
+  {
+    "name": "Bailey",
+    "species": "Dog",
+    "gender": "Female",
+    "breed": "Boxer",
+    "dateOfBirth": "2013-12-05",
+    "dateOfAdoption": "2023-10-25",
+    "description": "Independent",
+    "profileImg": "img2.jpg",
+    "adoptionStatus": "Available"
+  },
+  {
+    "name": "Daisy",
+    "species": "Cat",
+    "gender": "Female",
+    "breed": "Dachshund",
+    "dateOfBirth": "2017-03-17",
+    "dateOfAdoption": null,
+    "description": "Curious and adventurous",
+    "profileImg": "img3.jpg",
+    "adoptionStatus": "Available"
+  },
+  {
+    "name": "Sadie",
+    "species": "Dog",
+    "gender": "Female",
+    "breed": "Siberian Husky",
+    "dateOfBirth": "2018-07-22",
+    "dateOfAdoption": "2023-05-13",
+    "description": "Easygoing",
+    "profileImg": "img4.jpg",
+    "adoptionStatus": "Available"
+  },
+  {
+    "name": "Molly",
+    "species": "Cat",
+    "gender": "Female",
+    "breed": "Labrador",
+    "dateOfBirth": "2016-10-08",
+    "dateOfAdoption": null,
+    "description": "Intelligent and trainable",
+    "profileImg": "img5.jpg",
+    "adoptionStatus": "Available"
+  }
+]

@@ -1,9 +1,9 @@
+import path from 'path';
 import { Sequelize } from 'sequelize';
 
-const db = new Sequelize('app', '', '', {
-	storage: './database.sqlite',
-	dialect: 'sqlite',
-	logging: false,
+const database = new Sequelize({
+  dialect: 'sqlite',
+  storage: path.join(__dirname,'..', 'db', 'database.sqlite')
 });
 
-export default db;
+export default database;
