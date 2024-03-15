@@ -8,10 +8,11 @@ export const addPet = async (petData: any) => {
     return pet;
 };
 
+// TODO: allow filters
 export const getPets = async () => {
     const pets = await PetRecord.findAll();
     return pets;
 };
 
 
-// Add more service functions as needed
+// Add more service for CRUD functions as needed

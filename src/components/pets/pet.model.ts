@@ -2,22 +2,36 @@ import { DataTypes, Model } from 'sequelize';
 import database from '../../config/database.config'
 
 // Custom types
-export type petSpecies = 'Dog'| 'Cat';
-export type petGender = 'Male'| 'Female';
-export type petAdoptionStatus = "Available" | "Pending" | "Adopted"
+export type PetSpecies = 'Dog'| 'Cat';
+export type PetGender = 'Male'| 'Female';
+export type PetAdoptionStatus = "Available" | "Pending" | "Adopted"
+
+// Interface
+export interface IPet {
+  id?: number;
+  name: string;
+  species: PetSpecies;
+  gender: PetGender;
+  breed: string;
+  dateOfBirth: Date;
+  dateOfAdoption?: Date | null; // Assuming dateOfAdoption can be null
+  description?: string | null; // Assuming description can be null
+  profileImg?: string | null; // Assuming profileImg can be null
+  adoptionStatus: PetAdoptionStatus;
+}
 
 // Pet DB model
-export class PetRecord extends Model {
+export class PetRecord extends Model<IPet> implements IPet {
   declare id: number;
   declare name: string;
-  declare species: petSpecies;
-  declare gender: petGender;
+  declare species: PetSpecies;
+  declare gender: PetGender;
   declare breed: string;
   declare dateOfBirth: Date;
   declare dateOfAdoption: Date;
   declare description: string;
   declare profileImg: string;
-  declare adoptionStatus: boolean;
+  declare adoptionStatus: PetAdoptionStatus;
 }
 
 PetRecord.init({
@@ -35,6 +49,10 @@ PetRecord.init({
     allowNull: false
   },
   breed: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
+  gender: {
     type: DataTypes.STRING,
     allowNull: false
   },

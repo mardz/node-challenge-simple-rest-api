@@ -8,5 +8,4 @@ petRoutes.get('/', petController.getPets);
 petRoutes.post('/', petController.addPet);
 
 // Add more routes as needed
-
 export default petRoutes;
