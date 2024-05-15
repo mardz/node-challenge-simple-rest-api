@@ -6,9 +6,20 @@ Un Refugio de Animales local que quiere crear un sitio web para facilitar la ado
 La plataforma debería permitir a los usuarios administradores ver, gestionar perfiles de mascotas, revisar solicitudes de adopción abiertas y aprobar/rechazarlas, mientras que en el lado publico del API debe permitir a los usuarios ver las mascodas disponibles para adoptar, así como enviar solicitudes de adopción.
 
 La primera version del API (v1) se busca tener la siguiente funcionalidad:
-* Operaciones CRUD sobre los perfiles de mascotas,
-* Gestionar solicitudes y aprobaciones de adopción.
-* Seguimiento del estado de adopción de cada mascota.
+* Operaciones CRUD sobre los perfiles de mascotas
+    * GET /v1/pets?species=:value&breed=:value&lifeStage=:value
+    * GET /v1/pets/:id
+    * POST /v1/pets
+    * PUT /v1/pets
+    * DELETE /v1/pets
+* Enviar solicitud de adopción
+    * POST /v1/adoptions
+* Seguimiento del estado de solicitudes de adopción buscando por email
+    * GET /v1/adoptions?email=:value
+* Lista de solicitudes de adopción filtrable por status
+    * POST /v1/adoptions?status=:value
+* Resolver status de peticion de adopción
+    * POST /v1/adoptions/:id/resolve
 
 ### Especificaciones generales
 Cada perfil de mascota debe incluir la siguiente información:
@@ -31,31 +42,23 @@ Las solicitudes de adopcion deben contener la siguiente informacion:
 * Notas donde pueda explicar razones por que se aceptó o rechazó la peticion de adopcion (llenadas por usuarios administradores)
 * Estado de solicitud de adopción (p. ej. "Received", "In Review", "Accepted", "Rejected")
 
-#### Interacción del usuario:
-**Usuarios Administradores**
-* Implementar operaciones CRUD para la gestión de perfiles de mascotas.
-    * Los usuarios deberían poder ver una lista de mascotas disponibles con detalles básicos.
-    * Permita que los usuarios vean información detallada de cada mascota por Id
-    * Editar informacion de una mascota
-    * Borrar una mascota
-* Revisar solicitudes de adopcion y cambiar estatus de las mismas.
-
-**Usuarios externos**
+#### Reglas adicionales  considerarar
 * Ver lista de mascotas disponibles para adoptar
+    * Permitir filtros por especie, raza, género, edad/lifeStage (puppy < 1 año, adult 1 a 7 años, senior > 7 años)
 * Ver detalle de mascota
 * Crear una solicitud de adopción para mascotas específicas
-* Recibir un email cuando el status de la solicitud cambie
+* Solo permitir 1 solicitud de adopcion activa por mascota
 
 #### Proceso de Adopción:
 Cuando un usuario envía una solicitud de adopción, actualice el estado de adopción de la mascota a "Pending" para que no se muestre hasta no resolver su situacion.
 Permita que los administradores revisen y aprueben/rechacen solicitudes de adopción, actualizando el estado de la mascota en consecuencia. 
 
 ### Ideas de funciones adicionales (opcional):
-* Implemente la función de búsqueda y filtrado para ayudar a los usuarios a encontrar mascotas según criterios (por ejemplo, especie, edad).
 * Permitir registro de usuarios visitantes:
     * Permita a los usuarios marcar sus mascotas favoritas.
     * Vista de perfil de usuario con un historial de solicitudes enviadas y mascotas adoptadas.
 * Puedes crear una pagina web con React o angular para demostrar el funcionamiento de tu API.
+* Enviar correo electronico confirmando que se ha creado la solicitud de adopcion
 
 ## Requisitos técnicos:
 * Utilice TypeScript para el desarrollo del lado del servidor.
@@ -63,6 +66,7 @@ Permita que los administradores revisen y aprueben/rechacen solicitudes de adopc
 * Utilice SQLite u otra base de datos adecuada para almacenar datos de mascotas y usuarios.
 * Aplique un manejo y validación de errores adecuados en toda la aplicación.
 * Incluya pruebas unitarias para funciones y componentes críticos utilizando un marco de prueba (por ejemplo, Jest).
+* Incluye seeds
 
 ## Documentación esperada
 * Incluya instrucciones claras para los puntos finales de API y las estructuras de datos.
@@ -71,6 +75,8 @@ Permita que los administradores revisen y aprueben/rechacen solicitudes de adopc
 ## Envío
 Envíe su proyecto como un repositorio de GitHub a tu tutor, incluyendo un archivo README.md claro que explique su proyecto, sus características y cómo ejecutarlo.
 
+De preferencia incluir colección de postman para facilitar la revision.
+
 ## Criterios a evaluar
 * Funcionalidad: ¿La aplicación cumple con los requisitos especificados?
 * Calidad del código: ¿el código está bien estructurado, es legible y cumple con las mejores prácticas?
@@ -78,7 +84,7 @@ Envíe su proyecto como un repositorio de GitHub a tu tutor, incluyendo un archi
 * Documentación: ¿Está el proyecto bien documentado y proporciona instrucciones claras para su configuración y uso?
  
 # Pre-requisitos de ambiente
-1. Instalar NVM
+1. Instalar NVM 
 2. Instalar Node JS (LTS al momento v20.11.0) and set it as default
     ```
     nvm install 20.11.0
@@ -101,22 +107,3 @@ Envíe su proyecto como un repositorio de GitHub a tu tutor, incluyendo un archi
 ## Fuente de informacion semilla usada en este repo
 * [Dog breeds](https://github.com/jfairbank/programming-elm.com/blob/master/dog-breeds.json)
 * [Cat breeds](https://github.com/jfairbank/programming-elm.com/blob/master/cat-breeds.json)
-
-__________
-***TODO***
-* seed data DB local
-* linter, husky pre-commits hooks
-* full example of folder structure by component 
-/src
-    /config
-    /pet
-        pet.controller.ts
-        pet.route.ts
-        pet.service.ts
-        pet.model.ts
-        pet.spec.ts
-    /user
-        ...
-    /commons
-        ... any common code
-    server.ts
