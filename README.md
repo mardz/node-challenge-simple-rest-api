@@ -4,7 +4,7 @@ Este repositorio pretende ser una plantilla rápida para ayudar a practicar conc
 Un Refugio de Animales local que quiere crear un sitio web para facilitar la adopción de mascotas. El proyecto en general busca crear una plataforma que conecte a los posibles adoptantes con las mascotas disponibles para adopción.
 La plataforma debería permitir a los usuarios administradores ver, gestionar perfiles de mascotas, revisar solicitudes de adopción abiertas y aprobar/rechazarlas, mientras que en el lado público de la API debe permitir a los usuarios ver las mascotas disponibles para adoptar, así como enviar solicitudes de adopción.
 
-# Pre-requisitos de ambiente
+## Pre-requisitos de ambiente
 1. Instalar NVM.
     - [Windows](https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/)
 2. Instalar Node JS (LTS al momento v20.11.0) and set it as default
@@ -20,8 +20,7 @@ La plataforma debería permitir a los usuarios administradores ver, gestionar pe
 8. Correr unit tests `yarn run test`
 
 ## [Requerimientos funcionales](./functional_requirements.md)
-
-### [Especificaciones generales](./specifications.md)
+1. ### [Especificaciones generales](./specifications.md)
 
 ## Requisitos técnicos:
 * Utilice TypeScript para el desarrollo del lado del servidor.
