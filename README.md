@@ -1,28 +1,12 @@
 # Node challenge: Pet Adoption RESTful API
 Este repositorio pretende ser una plantilla rápida para ayudar a practicar conceptos sobre APIs con NodeJS.
 
+Un Refugio de Animales local que quiere crear un sitio web para facilitar la adopción de mascotas. El proyecto en general busca crear una plataforma que conecte a los posibles adoptantes con las mascotas disponibles para adopción.
+La plataforma debería permitir a los usuarios administradores ver, gestionar perfiles de mascotas, revisar solicitudes de adopción abiertas y aprobar/rechazarlas, mientras que en el lado público de la API debe permitir a los usuarios ver las mascotas disponibles para adoptar, así como enviar solicitudes de adopción.
+
 ## [Requerimientos funcionales](./functional_requirements.md)
 
-### Especificaciones generales
-Cada perfil de mascota debe incluir la siguiente información:
-* ID único de mascota
-* Nombre de mascota
-* Especies (p. ej., "Dog" para perro, "Cat" para gato) 
-* Raza (p. ej., dependiendo de la especie, "Labrador Retriever" para perro, "Persian" para gato, etcétera )
-* Fecha Nacimiento
-* Fecha Adopcion (solo si ya fue adoptado)
-* Género ("Male" para macho, "Female" para hembra)
-* Descripción 
-* Imagen (formato URL, asume que la imagen estaría previamente guardada en un servicio externo)
-* Estado de adopción ("Available" o disponible, "Pending" o pendiente, "Adopted" o adoptado)
-
-Las solicitudes de adopción deben contener la siguiente informacion:
-* Nombre de solicitante
-* Email de solicitante
-* Telefono de solicitante
-* Mascota que quiere adoptar
-* Notas donde pueda explicar razones por que se aceptó o rechazó la petición de adopción (llenadas por usuarios administradores)
-* Estado de solicitud de adopción (p. ej. "Received", "In Review", "Accepted", "Rejected")
+### [Especificaciones generales](./specifications.md)
 
 #### Reglas adicionales a considerar
 * Ver lista de mascotas disponibles para adoptar
