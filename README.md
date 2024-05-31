@@ -3,7 +3,7 @@ Este repositorio pretende ser una plantilla rápida para ayudar a practicar conc
 
 ## Requerimientos funcionales
 Un Refugio de Animales local que quiere crear un sitio web para facilitar la adopción de mascotas. El proyecto en general busca crear una plataforma que conecte a los posibles adoptantes con las mascotas disponibles para adopción.
-La plataforma debería permitir a los usuarios administradores ver, gestionar perfiles de mascotas, revisar solicitudes de adopción abiertas y aprobar/rechazarlas, mientras que en el lado público del API debe permitir a los usuarios ver las mascotas disponibles para adoptar, así como enviar solicitudes de adopción.
+La plataforma debería permitir a los usuarios administradores ver, gestionar perfiles de mascotas, revisar solicitudes de adopción abiertas y aprobar/rechazarlas, mientras que en el lado público de la API debe permitir a los usuarios ver las mascotas disponibles para adoptar, así como enviar solicitudes de adopción.
 
 La primera versión de la API (v1) se busca tener la siguiente funcionalidad:
 * Operaciones CRUD sobre los perfiles de mascotas
@@ -100,7 +100,7 @@ De preferencia incluir colección de postman para facilitar la revisión.
 * Repositorios Boilerplate donde se baso este ejercicio
     * https://github.com/mwolfhoffman/node-jwt-sqlite-typescript-starter
     * https://github.com/Chensokheng/rest-api/tree/master
-* [Introducción a NodeJS](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs): 
+* [Introducción a NodeJS](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs target="_blank"): 
 * [Ethereal Email](https://ethereal.email/): Servicio SMTP falso para simular envío de email 
     * [Using nodemailer with ethereal example](https://dev.to/berviantoleo/email-testing-using-ethereal-inb)
 * [Manual oficial Typescript](https://www.typescriptlang.org/docs/handbook/2/basic-types.html)
