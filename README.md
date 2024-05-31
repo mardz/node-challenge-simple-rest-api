@@ -93,14 +93,15 @@ De preferencia incluir colección de postman para facilitar la revisión.
 3. Instalar yarn globalmente para manejo de dependencias `npm install yarn -g`
 4. Hacer un fork de este repositorio y descargarlo localmente
 5. Entrar al directorio raíz del repositorio y correr el comando `yarn install` para descargar las dependencias iniciales
-6. Correr el proyecto `yarn run dev`
-7. Correr unit tests `yarn run test`
+6. Despues de instalar el proyecto puedes correr el comando `yarn run db:seed` para configurar la base de datos
+7. Correr el proyecto `yarn run dev`
+8. Correr unit tests `yarn run test`
 
 ## Recursos de utilidad
 * Repositorios Boilerplate donde se baso este ejercicio
     * https://github.com/mwolfhoffman/node-jwt-sqlite-typescript-starter
     * https://github.com/Chensokheng/rest-api/tree/master
-* [Introducción a NodeJS](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs target="_blank"): 
+* [Introducción a NodeJS](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs){:target="_blank"} 
 * [Ethereal Email](https://ethereal.email/): Servicio SMTP falso para simular envío de email 
     * [Using nodemailer with ethereal example](https://dev.to/berviantoleo/email-testing-using-ethereal-inb)
 * [Manual oficial Typescript](https://www.typescriptlang.org/docs/handbook/2/basic-types.html)
