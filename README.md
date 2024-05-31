@@ -21,23 +21,9 @@ La plataforma debería permitir a los usuarios administradores ver, gestionar pe
 
 ## [Requerimientos funcionales](./functional_requirements.md)
 1. ### [Especificaciones generales](./specifications.md)
+2. ### [Requisitos técnicos](./technical_requirements.md)
 
-## Requisitos técnicos:
-* Utilice TypeScript para el desarrollo del lado del servidor.
-* Implemente Express.js para crear la API RESTful.
-* Utilice SQLite u otra base de datos adecuada para almacenar datos de mascotas y usuarios.
-* Aplique un manejo y validación de errores adecuados en toda la aplicación.
-* Incluya pruebas unitarias para funciones y componentes críticos utilizando un marco de prueba (por ejemplo, Jest).
-* Incluye seeds
-
-## Documentación esperada
-* Incluya instrucciones claras para los puntos finales de API y las estructuras de datos.
-* Documente cualquier característica o funcionalidad adicional implementada.
-
-## Envío
-Envíe su proyecto como un repositorio de GitHub a tu tutor, incluyendo un archivo README.md claro que explique su proyecto, sus características y cómo ejecutarlo.
-
-De preferencia incluir colección de postman para facilitar la revisión.
+## [Documentación esperada y entregables](./documentation.md)
 
 ## [Criterios a evaluar](./evaluation.md)
 
