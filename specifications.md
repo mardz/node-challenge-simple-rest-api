@@ -30,7 +30,7 @@ Las solicitudes de adopción deben contener la siguiente informacion:
 Cuando un usuario envía una solicitud de adopción, actualice el estado de adopción de la mascota a "Pending" para que no se muestre hasta no resolver su situación.
 Permita que los administradores revisen y aprueben/rechacen solicitudes de adopción, actualizando el estado de la mascota en consecuencia. 
 
-### Ideas de funciones adicionales (opcional):
+#### Ideas de funciones adicionales (opcional):
 * Permitir registro de usuarios visitantes:
     * Permita a los usuarios marcar sus mascotas favoritas.
     * Vista de perfil de usuario con un historial de solicitudes enviadas y mascotas adoptadas.
