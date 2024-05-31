@@ -18,3 +18,21 @@ Las solicitudes de adopción deben contener la siguiente informacion:
 * Mascota que quiere adoptar
 * Notas donde pueda explicar razones por que se aceptó o rechazó la petición de adopción (llenadas por usuarios administradores)
 * Estado de solicitud de adopción (p. ej. "Received", "In Review", "Accepted", "Rejected")
+
+#### Reglas adicionales a considerar
+* Ver lista de mascotas disponibles para adoptar
+    * Permitir filtros por especie, raza, género, edad/lifeStage (puppy < 1 año, adult 1 a 7 años, senior > 7 años)
+* Ver detalle de mascota
+* Crear una solicitud de adopción para mascotas específicas
+* Solo permitir 1 solicitud de adopción activa por mascota
+
+#### Proceso de Adopción:
+Cuando un usuario envía una solicitud de adopción, actualice el estado de adopción de la mascota a "Pending" para que no se muestre hasta no resolver su situación.
+Permita que los administradores revisen y aprueben/rechacen solicitudes de adopción, actualizando el estado de la mascota en consecuencia. 
+
+### Ideas de funciones adicionales (opcional):
+* Permitir registro de usuarios visitantes:
+    * Permita a los usuarios marcar sus mascotas favoritas.
+    * Vista de perfil de usuario con un historial de solicitudes enviadas y mascotas adoptadas.
+* Puedes crear una página web con React o Angular para demostrar el funcionamiento de tu API.
+* Enviar correo electrónico confirmando que se ha creado la solicitud de adopción.

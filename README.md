@@ -4,27 +4,24 @@ Este repositorio pretende ser una plantilla rápida para ayudar a practicar conc
 Un Refugio de Animales local que quiere crear un sitio web para facilitar la adopción de mascotas. El proyecto en general busca crear una plataforma que conecte a los posibles adoptantes con las mascotas disponibles para adopción.
 La plataforma debería permitir a los usuarios administradores ver, gestionar perfiles de mascotas, revisar solicitudes de adopción abiertas y aprobar/rechazarlas, mientras que en el lado público de la API debe permitir a los usuarios ver las mascotas disponibles para adoptar, así como enviar solicitudes de adopción.
 
+# Pre-requisitos de ambiente
+1. Instalar NVM.
+    - [Windows](https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/)
+2. Instalar Node JS (LTS al momento v20.11.0) and set it as default
+    ```
+    nvm install 20.11.0
+    nvm alias default 20.11.0
+    ```
+3. Instalar yarn globalmente para manejo de dependencias `npm install yarn -g`
+4. Hacer un fork de este repositorio y descargarlo localmente
+5. Entrar al directorio raíz del repositorio y correr el comando `yarn install` para descargar las dependencias iniciales
+6. Despues de instalar el proyecto puedes correr el comando `yarn run db:seed` para configurar la base de datos
+7. Correr el proyecto `yarn run dev`
+8. Correr unit tests `yarn run test`
+
 ## [Requerimientos funcionales](./functional_requirements.md)
 
 ### [Especificaciones generales](./specifications.md)
-
-#### Reglas adicionales a considerar
-* Ver lista de mascotas disponibles para adoptar
-    * Permitir filtros por especie, raza, género, edad/lifeStage (puppy < 1 año, adult 1 a 7 años, senior > 7 años)
-* Ver detalle de mascota
-* Crear una solicitud de adopción para mascotas específicas
-* Solo permitir 1 solicitud de adopción activa por mascota
-
-#### Proceso de Adopción:
-Cuando un usuario envía una solicitud de adopción, actualice el estado de adopción de la mascota a "Pending" para que no se muestre hasta no resolver su situación.
-Permita que los administradores revisen y aprueben/rechacen solicitudes de adopción, actualizando el estado de la mascota en consecuencia. 
-
-### Ideas de funciones adicionales (opcional):
-* Permitir registro de usuarios visitantes:
-    * Permita a los usuarios marcar sus mascotas favoritas.
-    * Vista de perfil de usuario con un historial de solicitudes enviadas y mascotas adoptadas.
-* Puedes crear una página web con React o Angular para demostrar el funcionamiento de tu API.
-* Enviar correo electrónico confirmando que se ha creado la solicitud de adopción.
 
 ## Requisitos técnicos:
 * Utilice TypeScript para el desarrollo del lado del servidor.
@@ -43,26 +40,7 @@ Envíe su proyecto como un repositorio de GitHub a tu tutor, incluyendo un archi
 
 De preferencia incluir colección de postman para facilitar la revisión.
 
-## Criterios a evaluar
-* Funcionalidad: ¿La aplicación cumple con los requisitos especificados?
-* Calidad del código: ¿el código está bien estructurado, es legible y cumple con las mejores prácticas?
-* Pruebas: ¿Existen pruebas unitarias para componentes críticos y pasan todas al 100%?
-* Documentación: ¿Está el proyecto bien documentado y proporciona instrucciones claras para su configuración y uso?
- 
-# Pre-requisitos de ambiente
-1. Instalar NVM.
-    - [Windows](https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/)
-2. Instalar Node JS (LTS al momento v20.11.0) and set it as default
-    ```
-    nvm install 20.11.0
-    nvm alias default 20.11.0
-    ```
-3. Instalar yarn globalmente para manejo de dependencias `npm install yarn -g`
-4. Hacer un fork de este repositorio y descargarlo localmente
-5. Entrar al directorio raíz del repositorio y correr el comando `yarn install` para descargar las dependencias iniciales
-6. Despues de instalar el proyecto puedes correr el comando `yarn run db:seed` para configurar la base de datos
-7. Correr el proyecto `yarn run dev`
-8. Correr unit tests `yarn run test`
+## [Criterios a evaluar](./evaluation.md)
 
 ## Recursos de utilidad
 * Repositorios Boilerplate donde se baso este ejercicio
