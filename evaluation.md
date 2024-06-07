@@ -1,5 +1,5 @@
-## Criterios a evaluar
-* Funcionalidad: ¿La aplicación cumple con los requisitos especificados?
-* Calidad del código: ¿el código está bien estructurado, es legible y cumple con las mejores prácticas?
-* Pruebas: ¿Existen pruebas unitarias para componentes críticos y pasan todas al 100%?
-* Documentación: ¿Está el proyecto bien documentado y proporciona instrucciones claras para su configuración y uso?
+## Evaluation criteria
+* Functionality: Does the application meet the specified requirements?
+* Code quality: Is the code well structured, readable, and meets best practices?
+* Tests: Are there unit tests for critical components and do they all pass 100%?
+* Documentation: Is the project well documented and does it provide clear instructions for setup and use?

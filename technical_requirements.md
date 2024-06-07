@@ -1,6 +1,6 @@
-## Requisitos técnicos:
-* Utilice TypeScript para el desarrollo del lado del servidor.
-* Implemente Express.js para crear la API RESTful.
-* Utilice SQLite u otra base de datos adecuada para almacenar datos de mascotas y usuarios.
-* Aplique un manejo y validación de errores adecuados en toda la aplicación.
-* Incluya pruebas unitarias para funciones y componentes críticos utilizando un marco de prueba (por ejemplo, Jest).
+## Technical Requirements
+* Use TypeScript for server-side development.
+* Implement Express.js to create the RESTful API.
+* Use SQLite or another suitable database to store pet and user data.
+* Apply proper error handling and validation throughout the application.
+* Include unit tests for critical features and components using a testing framework (e.g. Jest).
