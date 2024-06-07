@@ -6,8 +6,8 @@ A local Animal Shelter that wants to create a website to facilitate pet adoption
 The platform should allow admin users to view, manage pet profiles, review open adoption requests and approve/reject them, while on the public side of the API it should allow users to view pets available for adoption as well as submit requests. of adoption.
 
 ## Environment Prerequisites
-Install NVM.
-    - [Windows](https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/)
+1. Install NVM.
+	[Windows](https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/)
 2. Install Node JS (LTS) and set it as default
     ```
     nvm install 20.11.0
@@ -28,12 +28,14 @@ Install NVM.
 
 ## Instructions
 ### [Functional Requirements](./functional_requirements.md)
-1. ### [Especificaciones generales](./specifications.md)
-2. ### [Requisitos técnicos](./technical_requirements.md)
-### Business Rules
+### [Business Rules](./specifications.md)
 ## [Documentación esperada y entregables](./documentation.md)
 
 ## [Criterios a evaluar](./evaluation.md)
+
+## [Technical Requirements](./technical_requirements.md)
+## Testing and Validation Requisites
+## Acceptance Criteria
 
 ## Resources
 * Boilerplate repositories where this exercise was based
