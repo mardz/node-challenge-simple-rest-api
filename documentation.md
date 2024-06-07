@@ -1,8 +1,7 @@
-## Documentación esperada y entregables
-* Incluya instrucciones claras para los puntos finales de API y las estructuras de datos.
-* Documente cualquier característica o funcionalidad adicional implementada.
+## Expected documentation and deliverables
+* Include clear instructions for API endpoints and data structures.
+* Document any additional features or functionality implemented.
 
-## Envío
-Envíe su proyecto como un repositorio de GitHub a tu tutor, incluyendo un archivo README.md claro que explique su proyecto, sus características y cómo ejecutarlo.
+Submit your project as a GitHub repository to your tutor, including a clear README.md file that explains your project, its features, and how to run it.
 
-De preferencia incluir colección de postman para facilitar la revisión.
+Please include Postman collection for easy review.
