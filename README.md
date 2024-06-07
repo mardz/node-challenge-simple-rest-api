@@ -29,12 +29,10 @@ The platform should allow admin users to view, manage pet profiles, review open 
 ## Instructions
 ### [Functional Requirements](./functional_requirements.md)
 ### [Business Rules](./specifications.md)
-
-## [Evaluation criteria](./evaluation.md)
-
 ## [Technical Requirements](./technical_requirements.md)
-## Testing and Validation Requisites
+## Testing and Validation Requisites - TBD
 ## Acceptance Criteria
+### [Evaluation criteria](./evaluation.md)
 ### [Expected documentation and deliverables](./documentation.md)
 
 ## Resources
