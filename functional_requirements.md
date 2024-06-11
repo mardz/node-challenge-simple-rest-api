@@ -1,6 +1,6 @@
 ## Functional Requirements
 
-The first version of the API (v1) aim is to have the following functionality:
+The aim of this version of the API (v1) is to have the following functionality:
 * CRUD operations about pet profiles
     * GET /v1/pets?species=:value&breed=:value&lifeStage=:value
     * GET /v1/pets/:id
