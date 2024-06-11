@@ -16,4 +16,4 @@ The aim of this version of the API (v1) is to have the following functionality:
 * Resolve adoption request status
     * POST /v1/adoptions/:id/resolve
 
-**Note:** It is not a requirement to create users.
+**Note:** User creation is not a requirement.
