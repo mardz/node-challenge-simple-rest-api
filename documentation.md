@@ -1,4 +1,5 @@
 ## Expected documentation and deliverables
+
 * Include clear instructions for API endpoints and data structures.
 * Document any additional features or functionality implemented.
 
