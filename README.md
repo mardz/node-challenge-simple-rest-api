@@ -3,7 +3,8 @@
 This repository is intended to be a quick template to help practice API concepts with NodeJS.
 
 A local Animal Shelter that wants to create a website to facilitate pet adoption. The overall project seeks to create a platform that connects potential adopters with pets available for adoption.
-The platform should allow admin users to view, manage pet profiles, review open adoption requests and approve/reject them, while on the public side of the API it should allow users to view pets available for adoption as well as submit requests. of adoption.
+The platform should allow admin users to view and manage pet profiles, review, and approve or reject open adoption requests. 
+The public side of the API it should allow users to view pets available for adoption as well as submit adoption requests.
 
 ## Environment Prerequisites
 1. Install NVM.
