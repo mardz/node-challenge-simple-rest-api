@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Este repositorio pretende ser una plantilla rápida para ayudar a practicar conceptos sobre APIs con NodeJS.",
   "main": "index.js",
+  "engines": {
+    "node": ">=20.11.0"
+  },
   "scripts": {
     "dev": "ts-node-dev --respawn src/server.ts",
     "build": "tsc",
